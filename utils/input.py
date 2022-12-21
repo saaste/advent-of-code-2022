@@ -2,12 +2,15 @@ import sys
 from typing import List
 import os
 
+def is_test_input() -> bool:
+    return "--test-input" in sys.argv
+
 def get_day_of_month() -> str:
     return sys.argv[0][4:6]
 
 def get_input_file() -> str:
     script_file = os.path.basename(sys.argv[0])
-    if "--test-input" in sys.argv:
+    if is_test_input():
         return f"inputs/{script_file.replace('.py', '.test.txt')}"
     
     return f"inputs/{script_file.replace('.py', '.txt')}"
