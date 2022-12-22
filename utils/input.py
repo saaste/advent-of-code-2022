@@ -20,8 +20,11 @@ def read_as_str(path: str) -> str:
         content = f.read()
     return content
 
-def read_as_str_list(path: str) -> List[str]:
-    return read_as_str(path).strip().split("\n")
+def read_as_str_list(path: str, strip: bool=True) -> List[str]:
+    if strip:
+        return read_as_str(path).strip().split("\n")
+    else:
+        return read_as_str(path).split("\n")
 
 def read_as_int_list(path: str) -> List[int]:
     return list(map(lambda str: int(str), read_as_str_list(path)))

@@ -41,3 +41,6 @@ Similar to day 16. I didn't have a clue how to solve this, but I found out that 
 by running a simulation millions of times. Turns out, this gives a right answers pretty consistently for the first part. The performance is poor but I found the solution to be kinda funny :D
 
 For the second  part, it took reeeeeaaally long time to find the right answer and I gave few wrong ones before getting the the star. But now that I got the max geoside count for each blueprint, I could "optimize" the code and check each blueprint as long as we'll have the right answer. Can take a while, but it will give the right answer eventually :D
+
+## Day 22
+Not really that difficult, but frustrating. I decided to create a paper cube for step two and figure out each side and case by hand. Perhaps there are some clever math and position manipulation, but naaaah.. :D
